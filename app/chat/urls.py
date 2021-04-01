@@ -1,9 +1,10 @@
-from .views import ChatMessageViewSet
+from .views import MessageListViewSet, SingleMessageViewSet
 from rest_framework.routers import DefaultRouter
 
 app_name = 'chat'
 router = DefaultRouter()
 
-router.register('chat', ChatMessageViewSet)
+router.register('list', MessageListViewSet)
+router.register('single', SingleMessageViewSet)
 
 urlpatterns = router.urls
