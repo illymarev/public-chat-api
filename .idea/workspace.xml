@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d16bd28c-6acb-449f-a570-6b4ab0fa947a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/chat/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/chat/migrations/0002_auto_20210401_1549.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/chat/tests/test_chat_messages.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/chat/tests/test_commands.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/chat/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/chat/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/chat/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/chat/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/chat/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/chat/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,8 @@
       <updated>1617278773510</updated>
       <workItem from="1617278774649" duration="77000" />
       <workItem from="1617278856116" duration="3504000" />
-      <workItem from="1617288846230" duration="6544000" />
+      <workItem from="1617288846230" duration="6587000" />
+      <workItem from="1617341307336" duration="3926000" />
     </task>
     <task id="LOCAL-00001" summary="Docker + django app + postgres">
       <created>1617279657773</created>
@@ -90,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617296355066</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Split listview and detailview; added pagination">
+      <created>1617298126247</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617298126247</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +117,7 @@
     <MESSAGE value="Docker + django app + postgres" />
     <MESSAGE value="Configured travis-ci, wait_for_db and added swagger" />
     <MESSAGE value="Added a ChatMessage model and a simple test to create it; serializers for chatmodel and url router" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a ChatMessage model and a simple test to create it; serializers for chatmodel and url router" />
+    <MESSAGE value="Split listview and detailview; added pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Split listview and detailview; added pagination" />
   </component>
 </project>
