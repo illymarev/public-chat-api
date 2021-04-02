@@ -1,14 +1,13 @@
 from django.core.exceptions import ValidationError
+import re
 
 
-def validate_email(self, value):
-    if value != '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$':
-        return ValidationError('wrong email')
+def validate_email(value):
+    regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
+    if not (re.search(regex, value)):
+        raise ValidationError('Wrong email')
 
-    # def clean(self):
-    #     if self.text == '^(?![\s\S])':
-    #         raise ValidationError
-    #     elif self.text != '^[A-Z]{1,100}$':
-    #         raise ValidationError
-    #     elif self.email != '^(\w|\.|\_|\-)+[@](\w|\_|\-|\.)+[.]\w{2,3}$':
-    #         raise ValidationError
+
+def validate_text(value):
+    if value != '^[A-Z0-9]{1,100}$':
+        raise ValidationError('Message must contain between 1 and 100 characters')
