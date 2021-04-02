@@ -9,5 +9,6 @@ def validate_email(value):
 
 
 def validate_text(value):
-    if value != '^[A-Z0-9]{1,100}$':
+    regex = '^.{1,100}$'
+    if not (re.search(regex, value)):
         raise ValidationError('Message must contain between 1 and 100 characters')
